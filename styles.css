@@ -1,0 +1,308 @@
+html{
+    
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+#navbar1 {
+    background-color: rgb(38, 33, 97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2px rgb(38, 33, 97);
+    z-index: 10;
+    transition: 0.3s;
+}
+
+
+
+.navbar1 a {
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    height: 100%;
+    width: 40%;
+    margin: 0 100px;
+    display: flex;
+    
+
+
+}
+
+
+#logo img {
+    height: 100%;
+    width: auto;
+    /* object-fit: cover; */
+}
+
+
+
+.nav-button {
+    background-color: rgb(38, 33, 97);
+    width: 140px;
+    height: 50%;
+    margin: 0 20px;
+    margin-right: 100px;
+    border-radius: 3px;
+    border: 3px solid rgb(223, 188, 44);
+    text-align: center;
+    color: rgb(223, 188, 44);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.12s;
+    /* box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.75); */
+}
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
+    
+
+}
+.nav-button:hover {
+    
+        background-color: rgba(255, 255, 255, 0.12);
+    
+}
+
+/* main{
+    height: auto;
+    width: auto;
+} */
+#header{
+    
+    /* height: auto; */
+    width: 70%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+h1 {
+    font-family: 'Changa', sans-serif;
+    font-size: 10rem;
+    line-height: 10rem;
+    color: rgb(38, 33, 97);
+}
+.gold-i {
+    color: rgb(223, 188, 44);
+}
+
+#projects {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    position:relative;
+    width: 40%;
+    min-width: 400px;
+
+    height:auto;
+    /* border: 2px solid rgb(38, 33, 97); */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px gray;
+    
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* transition: 0.5s ease-in-out; */
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-wrapper:hover .img-overlay {
+    opacity: 1;
+    
+  }
+
+  #test-p {
+    display: relative;
+    top: 100px;
+    left: 100px;
+  }
+.img-p {
+    
+    height: 85%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 2rem;
+}
+
+
+#footer1 {
+    background-color: rgb(38, 33, 97);
+    height: auto;
+    min-height: 115px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap:wrap;
+    font-size: 1.5rem;
+    /* overflow: hidden; */
+}
+
+.footer-div {
+    height: 100%;
+    width: auto;
+    margin: 0 15px;
+    color: white;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    display: flex;
+    align-items: center;
+    
+}
+#instagram-logo {
+    height: 80px;
+    width: auto;
+}
+#facebook-logo {
+    height: 55px;
+    width:auto;
+    margin: 10px;
+    margin-right: 40px;
+}
+
+.footer-div img {
+    
+    
+    transition: 0.2s;
+}
+.footer-div img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 7rem;
+    line-height: 7rem;
+    }
+    #footer1 {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .footer-div {
+        margin: 0 15px;
+    }
+    #facebook-logo {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    #navbar1 {
+        height: 90px;
+        justify-content: center;
+    }
+    #navbar1.hidden {
+        transform: translateY(-110%);
+    }
+    #logo {
+        margin: 0;
+        justify-content: center;
+    }
+    #logo.hidden {
+
+        position: fixed;
+        height: 70px;
+        width: auto;
+        right: 30px;
+        top: 40px;
+        border-radius: 50%;
+        transform: translateY(110%);
+        box-shadow: 1px 3px 15px 1px gray;
+    }
+    #logo img.hidden {
+        /* height: 100%;
+        width: auto; */
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .nav-button{
+        display: none;
+    }
+    #header {
+        margin-top: 120px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+    }
+    .img-wrapper {
+        min-width: 250px;
+    }
+    .img-p {
+        font-size: 1rem;
+    }
+    #footer1 {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* the colors in rgb are as follow 
+the blue/purple is rgb(38, 33, 97)
+the gold is rgb(223, 188, 44) */
